@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,600,700&display=swap');
+@import './variable';
+@import './bootstrap/bootstrap.scss';
+
+body{
+  min-height: 100vh;
+  background: $body-bg-image;
+  background-size: 100% auto;
+}
