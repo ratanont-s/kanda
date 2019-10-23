@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,600,700&display=swap');
 @import './variable';
 @import './bootstrap/bootstrap.scss';
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+@import './button';
+@import './hr';
 
-body{
+@import './header';
+@import './footer';
+@import './landing';
+
+body {
   min-height: 100vh;
   background: $body-bg-image;
-  background-size: 100% auto;
+  background-size: cover;
 }

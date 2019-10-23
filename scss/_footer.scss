@@ -1,0 +1,9 @@
+footer {
+    background: url('../img/bg-footer.png') no-repeat left top;
+    background-size: auto 100%;
+    padding-bottom: 80px;
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 120px;
+    }
+}

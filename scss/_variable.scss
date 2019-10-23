@@ -1,7 +1,21 @@
-
+// Colors system
+$primary: #f9623d;
+$success:#63a743;
+$info:#63b9da;
+$warning:#e25782;
 
 // Body
 $body-bg-image: url('../img/bg-content.png') no-repeat center top;
+$body-color: #120e0f;
 
 // Typography
-$font-family-base: 'Prompt', sans-serif;
+$font-family-base: 'Prompt',
+sans-serif;
+$enable-responsive-font-sizes: true;
+
+// Buttons
+$btn-border-width: 0;
+
+// Navbar
+$navbar-light-color: $body-color;
+$navbar-light-active-color: $primary;

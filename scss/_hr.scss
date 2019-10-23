@@ -1,0 +1,10 @@
+.hr {
+
+    // Primary
+    &-primary {
+        border-top-width: 0;
+        background: transparent url('../img/line-primary.svg') no-repeat center center;
+        background-size: auto 100%;
+        min-height: 32px;
+    }
+}

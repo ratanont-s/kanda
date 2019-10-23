@@ -1,0 +1,26 @@
+#top {
+    min-height: 100vh;
+    background: url('../img/bg-top.png') no-repeat center top;
+    background-size: 100% auto;
+}
+
+#bestSeller {
+    margin-bottom: 5rem;
+
+    .title {
+        font-weight: normal;
+        text-transform: uppercase;
+
+        span {
+            font-weight: 600;
+            font-size: 1.5em;
+            margin-top: -12px;
+        }
+    }
+
+    .product {
+        &-item {
+            padding-bottom: 1.5rem;
+        }
+    }
+}
