@@ -1,0 +1,30 @@
+.map{
+  @include media-breakpoint-down(md){
+    margin: 0 -15px;
+  }
+}
+
+.cart{
+  display: block;
+  position: relative;
+  padding-right: 15px;
+  &-icon{
+    max-height: 45px;
+  }
+  .badge{
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: $primary;
+    color: $white;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}

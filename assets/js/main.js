@@ -36,4 +36,29 @@ $(function () {
             }
         ]
     });
+
+    $("#brandSlide").slick({
+        arrows: false,
+        slidesToShow: 7,
+        autoplay: true,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 4,
+                }
+            }
+        ]
+    });
 });

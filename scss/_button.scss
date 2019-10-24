@@ -53,3 +53,22 @@
 .btn-warning {
     background-image: url('../img/bg-btn-warning.png');
 }
+
+// Button cart
+.btn-cart{
+    display: inline-flex;
+    align-items: center;
+    .icon-cart{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url('../img/bg-btn-cart.png') no-repeat center center;
+        background-size: contain;
+        margin-right: 1rem;
+    }
+}
+
+.btn-product-detail{
+    color: $body-color;
+    border-bottom: 1px solid $body-color;
+}

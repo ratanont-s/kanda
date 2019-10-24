@@ -11,10 +11,7 @@
 </head>
 
 <body>
-  <header class="mb-5">
-    <div class="bg-character">
-      <img src="./assets/img/bg-top-character.png" alt="">
-    </div>
+  <header>
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -38,10 +35,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#">สถานที่จำหน่าย</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./about.html">เกี่ยวกับเรา</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./contact.html">ติดต่อเรา</a>
             </li>
             <li class="nav-item">
@@ -51,29 +48,52 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="product mb-5">
-        <img src="./assets/img/product-top.png" alt="" class="product-img">
-      </div>
-      <div class="text-center">
-        <h2 class="text-primary mb-lg-4">แบรนด์เครื่องสำอางและสกินแคร์<small
-            class="d-block">ที่ได้รับการยอมรับจากคนทั่วโลก</small>
-        </h2>
-        <p class="mb-4">แบรนด์กันดะ ได้แรงบันดาลใจจากสถานที่ในประเทศญี่ปุ่น โดยสื่อถึงตัวผลิตภัณฑ์ทุกชนิดของแบรนด์ซึ่งได้มีการพัฒนาสูตร และมีสารสกัดที่คัดสรรมาอย่างดีจากประเทศญี่ปุ่นเป็นหลัก นอกจากนั้น คำว่า กันดะ ยังสะท้อนถึงการปกป้อง ป้องกัน ซึ่งผลิตภัณฑ์ทุกตัวในแบรนด์นั้น ต้องการปกป้องผิวจากทุกสภาวะ จึงเป็นที่มาของชื่อแบรนด์ “กันดะ”</p>
-      </div>
-    </div>
   </header>
   <main>
     <div class="container">
+      <h1 class="title mb-5">ติดต่อเราได้ที่นี่ <span class="text-primary d-block">Kanda Beauty</span>
+      </h1>
       <div class="row">
         <div class="col-lg">
-          <p class="mb-5">
-            <img src="./assets/img/products/product-group.png" alt="" class="img-fluid">
-          </p>
+          <ul class="list-address mb-5">
+            <li>
+              <span class="icon">
+                <img src="./assets/img/pin.svg" alt="">
+              </span>
+              <span class="text">บริษัท พลัสคานส์ จำกัด เลขที่ 345/28
+                เฮดควอเตอร์ส เอกมัย-ลาดพร้าว 94 (ปัญจมิตร)
+                แขวงพลับพลา เขตวังทองหลาง กรุงเทพมหานคร 10310</span>
+            </li>
+            <li>
+              <span class="icon">
+                <img src="./assets/img/email.svg" alt="">
+              </span>
+              <span class="text">info@kandabeauty.com</span>
+            </li>
+          </ul>
+          <div class="map mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.102439852111!2d100.61266451536905!3d13.772695500518308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f43c045fdef%3A0x123ffebb1d8ac4f0!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4nuC4peC4seC4quC4hOC4suC4meC4quC5jCDguIjguLPguIHguLHguJQ!5e0!3m2!1sen!2sth!4v1571898250680!5m2!1sen!2sth"
+              width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
         </div>
-        <div class="col-lg text-center text-lg-left">
-          <h2 class="text-primary">วิสัยทัศน์</h2>
-          <p class="mb-5">แบรนด์เครื่องสำอางและสกินแคร์ ที่ได้รับการยอมรับจากคนทั่วโลก พันธกิจสร้างสรรค์ผลิตภัณฑ์ที่ใช้แล้วเห็นผลจริง ซื่อตรงต่อลูกค้า คัดสรรสิ่งที่ดีเพื่อส่งมอบให้กับทุกคน</p>
+        <div class="col-lg">
+          <h3 class="font-weight-normal mb-4">ส่งข้อความถึงเรา</h3>
+          <form action="" class="mb-5">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="ชื่อของคุณ">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="อีเมล">
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control" placeholder="เบอร์โทรศัพท์">
+            </div>
+            <div class="form-group mb-4">
+                <textarea rows="6" class="form-control" placeholder="ข้อความ"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-5">ส่ง</button>
+          </form>
         </div>
       </div>
     </div>
@@ -82,37 +102,37 @@
     <div class="container text-center">
       <h4 class="mb-3">วางจำหน่ายแล้วทั่วประเทศ</h4>
       <div class="brand" id="brandSlide">
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-1.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-2.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-3.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-4.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-5.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-6.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-7.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-8.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-9.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-10.png" alt="">
-          </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-1.png" alt="">
         </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-2.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-3.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-4.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-5.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-6.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-7.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-8.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-9.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-10.png" alt="">
+        </div>
+      </div>
       <p class="mt-5">
         <img src="./assets/img/logo-footer.svg" alt="">
       </p>
