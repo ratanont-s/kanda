@@ -157,7 +157,7 @@ header {
 
 .is-sticky {
     .navbar {
-        background: url('../img/bg-navbar-bottom.png') no-repeat center bottom;
+        background: url('../img/bg-navbar-bottom.png') repeat-x center bottom;
         background-size: auto 100%;
         @include transition($transition-base);
         &-brand {
