@@ -1,9 +1,37 @@
 footer {
-    background: url('../img/bg-footer.png') no-repeat left top;
-    background-size: auto 100%;
+    background: url('../img/bg-footer.png') no-repeat left -100px bottom;
+    background-size: 250px auto;
     padding-bottom: 80px;
+
+    .list-social {
+        li {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3.75rem;
+                height: 3.75rem;
+                color: $white;
+                font-size: 2rem;
+            }
+
+            &.facebook a {
+                background-color: $facebook;
+            }
+
+            &.line a {
+                background-color: $line;
+            }
+
+            &.instagram a {
+                background-color: $instagram;
+            }
+        }
+    }
 
     @include media-breakpoint-up(lg) {
         padding-bottom: 120px;
+        background-position: left top;
+        background-size: auto 100%;
     }
 }

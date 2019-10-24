@@ -1,6 +1,11 @@
 // Button
 .btn {
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-color: transparent;
+    @include transition($transition-base);
 
     &::before {
         content: '';
@@ -21,29 +26,30 @@
         border-width: 0 !important;
         box-shadow: none !important;
     }
+
+    @include hover {
+        transform: scale(1.1);
+        @include transition($transition-base);
+    }
 }
 
 // Button primary
 .btn-primary {
-    background: transparent url('../img/bg-btn-primary.svg') no-repeat center center;
-    background-size: 100% 100%;
-
+    background-image: url('../img/bg-btn-primary.png');
 }
 
 // Button success
 .btn-success {
-    background: transparent url('../img/bg-btn-success.svg') no-repeat center center;
-    background-size: 100% 100%;
+    background-image: url('../img/bg-btn-success.png');
 }
 
 // Button info
 .btn-info {
-    background: transparent url('../img/bg-btn-info.svg') no-repeat center center;
-    background-size: 100% 100%;
+    background-image: url('../img/bg-btn-info.png');
+    color: color-yiq(theme-color("dark"));
 }
 
 // Button warning
 .btn-warning {
-    background: transparent url('../img/bg-btn-warning.svg') no-repeat center center;
-    background-size: 100% 100%;
+    background-image: url('../img/bg-btn-warning.png');
 }

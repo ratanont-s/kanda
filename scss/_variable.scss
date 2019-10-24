@@ -4,14 +4,25 @@ $success:#63a743;
 $info:#63b9da;
 $warning:#e25782;
 
+$facebook:#3a559f;
+$line:#00c200;
+$instagram:#c536a4;
+
 // Body
 $body-bg-image: url('../img/bg-content.png') no-repeat center top;
 $body-color: #120e0f;
+
+// Links
+$link-hover-decoration: none;
 
 // Typography
 $font-family-base: 'Prompt',
 sans-serif;
 $enable-responsive-font-sizes: true;
+
+// Buttons + Forms
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1.25rem;
 
 // Buttons
 $btn-border-width: 0;

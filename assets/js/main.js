@@ -5,6 +5,7 @@ $(function () {
     });
 
     $("#bestSeller .product").slick({
+        arrows: false,
         slidesToShow: 4,
         responsive: [{
                 breakpoint: 992,
