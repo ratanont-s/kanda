@@ -1,7 +1,13 @@
 $(function () {
+    'use strict'
+    
     $("#navbar").sticky({
         topSpacing: 0,
         zIndex: 1020
+    });
+
+    $('[data-toggle="offcanvas"]').on('click', function () {
+        $('.offcanvas-collapse').toggleClass('open')
     });
 
     $("#bestSeller .product").slick({

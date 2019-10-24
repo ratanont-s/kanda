@@ -13,6 +13,12 @@ footer {
                 height: 3.75rem;
                 color: $white;
                 font-size: 2rem;
+                @include transition($transition-base);
+                &:hover{
+                    box-shadow: $box-shadow;
+                    transform: scale(1.1);
+                    @include transition($transition-base);
+                }
             }
 
             &.facebook a {
