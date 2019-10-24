@@ -8,6 +8,12 @@ $facebook:#3a559f;
 $line:#00c200;
 $instagram:#c536a4;
 
+$white: #ffffff;
+
+$theme-colors: (
+  "white": $white
+);
+
 // Body
 $body-bg-image: url('../img/bg-content.png') no-repeat center top;
 $body-color: #120e0f;

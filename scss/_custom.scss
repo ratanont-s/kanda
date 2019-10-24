@@ -28,3 +28,26 @@
     font-weight: normal;
   }
 }
+
+.product-price{
+  font-size: 3.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  color: $primary;
+  .currency{
+    font-size: 0.5em;
+    font-weight: normal;
+    margin-top:15px;
+    color: $body-color;
+  }
+}
+
+.bootstrap-touchspin{
+  .btn{
+    border: 1px solid $border-color;
+    color: $primary;
+    font-family: $font-family-base;
+    font-size: 2rem;
+    line-height: 0;
+  }
+}
