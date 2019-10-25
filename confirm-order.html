@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kanda</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas-collapse navbar-collapse" id="navbarSupportedContent">
+          <button class="navbar-toggler-close" type="button" data-toggle="offcanvas">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./all-product.html">ร้านของเรา</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">สถานที่จำหน่าย</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">เกี่ยวกับเรา</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">ติดต่อเรา</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">แจ้งชำระเงิน</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <form action="" class="form-order mb-5">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="mb-5">
+              <h3 class="mb-3">ข้อมูลผู้สั่งซื้อ</h3>
+              <div class="form-row">
+                <div class="form-group col-lg-12">
+                  <label for="">ชื่อ-นามสกุล</label>
+                  <input type="text" class="form-control-plaintext" value="จรายุทธ  พรมทา">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="">เบอร์โทรศัพท์</label>
+                  <input type="tel" class="form-control-plaintext" value="086 555 8486">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label for="">อีเมล</label>
+                  <input type="email" class="form-control-plaintext" value="jarayuth@gmail.com">
+                </div>
+                <div class="form-group col-lg-12">
+                  <label for="">ที่อยู่สำหรับจัดส่งสินค้า</label>
+                  <textarea rows="5" class="form-control-plaintext">เลขที่ 1177 ชั้น 23. อาคารเพิร์ล แบงก์ค็อก ถ.พหลโยธิน แขวงพญาไท เขตพญาไท กรุงเทพฯ 10400.
+                  </textarea>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <h3 class="mb-3">ช่องทางการชำระเงิน</h3>
+              <div class="card card-body card-payment">
+                <div class="row align-items-center">
+                  <div class="col-lg">
+                    <h5 class="mb-0">โอนผ่านธนาคาร</h5>
+                  </div>
+                  <div class="col-lg-auto">
+                    <img src="./assets/img/logo-banks.png" alt="" class="ml-auto">
+                  </div>
+                </div>
+                <table class="table table-borderless table-sm">
+                  <tbody>
+                    <tr>
+                      <td>ธนาคาร</td>
+                      <td>ธนาคารกสิกรไทย</td>
+                    </tr>
+                    <tr>
+                      <td>ชื่อบัญชี</td>
+                      <td>นายสมมุติ นามสมมัติ</td>
+                    </tr>
+                    <tr>
+                      <td>เลขที่บัญชี</td>
+                      <td class="text-primary h5">009-0009-002</td>
+                    </tr>
+                    <tr>
+                      <td>สาขา</td>
+                      <td>กรุงเทพมหานคร</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="row align-items-center">
+                  <div class="col-lg">
+                    <p>หากคุณได้ทำการโอนเงินเรียบร้อยแล้ว <br>
+                      สามารถไปที่หน้าแจ้งการชำระเงินเพื่อแนบหลักฐาน</p>
+                  </div>
+                  <div class="col-lg-auto">
+                    <button class="btn btn-default btn-primary btn-pill shadow">แจ้งชำระเงิน</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h3 class="mb-3">รายการสั่งซื้อ</h3>
+            <div class="list-order">
+              <h4 class="mb-0">เลขที่ใบสั่งซื้อ</h4>
+              <h1 class="font-weight-bold text-primary">KD123</h1>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>สินค้า</th>
+                    <th class="text-right">ราคา</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Essence UV Spray x 1</td>
+                    <td class="text-right">฿89.00</td>
+                  </tr>
+                  <tr>
+                    <td>Fragrance Free UV x 1</td>
+                    <td class="text-right">฿487.00</td>
+                  </tr>
+                  <tr>
+                    <td>ราคารวม</td>
+                    <td class="text-right">฿868.00</td>
+                  </tr>
+                  <tr>
+                    <td>ค่าจัดส่ง</td>
+                    <td class="text-right">฿30.00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="align-middle">ยอดที่ต้องชำระทั้งหมด</td>
+                    <td class="text-right text-primary h3">฿900.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <h6 class="text-primary">หมายเหตุ</h6>
+              <ul class="list-note">
+                <li>กรุณาชำระเงินภายใน 24 ชั่วโมง หากเกินกำหนดออเดอร์ของ
+                    ท่านจะถูก ยกเลิกทันที</li>
+                <li>เลขที่ใบสั่งซื้อใช้สำหรับแจ้งการชำระเงิน และตรวจสอบสถานะสินค้า</li>
+                <li>ข้อมูลการสั่งซื้อจะถูกส่งไปยังอีเมล์ของคุณอีกฉบับ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="container text-center">
+      <h4 class="mb-3">วางจำหน่ายแล้วทั่วประเทศ</h4>
+      <div class="brand" id="brandSlide">
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-1.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-2.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-3.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-4.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-5.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-6.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-7.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-8.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-9.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-10.png" alt="">
+        </div>
+      </div>
+      <p class="mt-5">
+        <img src="./assets/img/logo-footer.svg" alt="">
+      </p>
+      <p class="mb-5">บริษัท พลัสคานส์ จำกัด เลขที่ 345/28 เฮดควอเตอร์ส เอกมัย-ลาดพร้าว 94 <span
+          class="d-lg-block">(ปัญจมิตร)
+          แขวงพลับพลา เขตวังทองหลาง กรุงเทพมหานคร 10310</span></p>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item facebook">
+          <a href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list-inline-item line">
+          <a href="#" target="_blank">
+            <i class="fab fa-line"></i>
+          </a>
+        </li>
+        <li class="list-inline-item instagram">
+          <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
