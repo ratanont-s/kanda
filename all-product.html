@@ -228,7 +228,7 @@
         </div>
         <div class="modal-body">
           <p>คุณมีสินค้าในตะกร้า 3 รายการ</p>
-          <table class="table table-modal">
+          <table class="table table-modal mb-5">
             <tbody>
               <tr>
                 <td>
@@ -237,18 +237,54 @@
                   </button>
                 </td>
                 <td>
-                  <img src="./assets/img/products/product-01.png" alt="" class="img-fluid">
+                  <div class="row">
+                    <div class="col-lg-auto">
+                      <img src="./assets/img/products/product-01.png" alt="" class="product-img">
+                    </div>
+                    <div class="col-lg">
+                      <p>Essence UV Spray<br>Anti-Pollution Mist</p>
+                      <h6 class="font-weight-bold">89.00</h6>
+                    </div>
+                    <div class="col-lg-auto">
+                      <div class="product-quatity">
+                        <input type="text" value="1" class="touchspin">
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="product-price">89.00</td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="btn-del">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
                 </td>
                 <td>
-                  <p>Essence UV Spray<br>Anti-Pollution Mist</p>
-                  <h6>89.00</h6>
+                  <div class="row">
+                    <div class="col-lg-auto">
+                      <img src="./assets/img/products/product-02.png" alt="" class="product-img">
+                    </div>
+                    <div class="col-lg">
+                      <p>Aloe Vera UV<br>Anti-Pollution Mist</p>
+                      <h6 class="font-weight-bold">199.00</h6>
+                    </div>
+                    <div class="col-lg-auto">
+                      <div class="product-quatity">
+                        <input type="text" value="2" class="touchspin">
+                      </div>
+                    </div>
+                  </div>
                 </td>
-                <td class="quatity">
-                  <input type="text" value="1" class="touchspin">
-                </td>
-                <td class="font-weight-bold text-primary">89.00</td>
+                <td class="product-price">389.00</td>
               </tr>
             </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="2">ราคารวม</th>
+                <th class="h3 text-primary text-right">487.00</th>
+              </tr>
+            </tfoot>
           </table>
           <div class="row">
             <div class="col">
@@ -265,11 +301,12 @@
   <!-- JS -->
   <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.js">
+  </script>
   <script src="./assets/js/main.js"></script>
 </body>
 
