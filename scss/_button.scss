@@ -54,6 +54,11 @@
     background-image: url('../img/bg-btn-warning.png');
 }
 
+// Button dark
+.btn-dark:not(.btn-default) {
+    background-image: url('../img/bg-btn-dark.png');
+}
+
 // Button cart
 .btn-cart{
     display: inline-flex;
