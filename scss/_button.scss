@@ -1,5 +1,5 @@
 // Button
-.btn:not(.btn-white) {
+.btn:not(.btn-white):not(.btn-default) {
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,23 +34,23 @@
 }
 
 // Button primary
-.btn-primary {
+.btn-primary:not(.btn-default) {
     background-image: url('../img/bg-btn-primary.png');
 }
 
 // Button success
-.btn-success {
+.btn-success:not(.btn-default) {
     background-image: url('../img/bg-btn-success.png');
 }
 
 // Button info
-.btn-info {
+.btn-info:not(.btn-default) {
     background-image: url('../img/bg-btn-info.png');
     color: color-yiq(theme-color("dark"));
 }
 
 // Button warning
-.btn-warning {
+.btn-warning:not(.btn-default) {
     background-image: url('../img/bg-btn-warning.png');
 }
 
@@ -71,4 +71,8 @@
 .btn-product-detail{
     color: $body-color;
     border-bottom: 1px solid $body-color;
+}
+
+.btn-pill{
+    border-radius: 10rem;
 }

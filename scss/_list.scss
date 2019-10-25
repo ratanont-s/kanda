@@ -13,3 +13,53 @@
     }
   }
 }
+
+.list-order{
+  background-color: #FFEDE2;
+  padding: 2rem 1rem;
+  margin: calc(13px + 1rem) 0 calc(13px + 1.5rem);
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 14px;
+    background: url('../img/bg-price-detail.png') repeat-x left top;
+    background-size: auto 100%;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 14px;
+    background: url('../img/bg-price-detail.png') repeat-x left top;
+    background-size: auto 100%;
+    transform: scaleY(-1);
+  }
+  .table{
+    th,td{
+      border-top-color: $white;
+    }
+    thead{
+      tr{
+        th{
+          border-top-width: 0;
+          border-bottom: 5px solid $white;
+        }
+      }
+    }
+    tfoot{
+      tr{
+        th,td{
+          border-bottom: 5px solid $white;
+        }
+      }
+    }
+  }
+}

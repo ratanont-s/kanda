@@ -51,3 +51,14 @@
     line-height: 0;
   }
 }
+
+.product-touchspin{
+  max-width: 215px;
+  margin: 0 auto;
+  .form-control{
+    text-align: center;
+  }
+  @include media-breakpoint-up(lg){
+    margin: 0 0;
+  }
+}
