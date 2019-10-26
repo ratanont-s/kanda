@@ -1,6 +1,6 @@
 $(function () {
     'use strict'
-    
+
     $("#navbar").sticky({
         topSpacing: 0,
         zIndex: 1020

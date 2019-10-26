@@ -12,9 +12,9 @@
 
 <body>
   <header class="mb-5">
-      <div class="bg-character">
-        <img src="./assets/img/bg-top-character.png" alt="">
-      </div>
+    <div class="bg-character">
+      <img src="./assets/img/bg-top-character.png" alt="">
+    </div>
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -26,7 +26,7 @@
 
         <div class="offcanvas-collapse navbar-collapse" id="navbarSupportedContent">
           <button class="navbar-toggler-close" type="button" data-toggle="offcanvas">
-              <i class="fas fa-times"></i>
+            <i class="fas fa-times"></i>
           </button>
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -45,7 +45,7 @@
               <a class="nav-link" href="./contact.html">ติดต่อเรา</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">แจ้งชำระเงิน</a>
+              <a class="nav-link" href="#checkOrderModal" data-toggle="modal">แจ้งชำระเงิน</a>
             </li>
           </ul>
         </div>
@@ -127,37 +127,37 @@
     <div class="container text-center">
       <h4 class="mb-3">วางจำหน่ายแล้วทั่วประเทศ</h4>
       <div class="brand" id="brandSlide">
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-1.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-2.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-3.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-4.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-5.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-6.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-7.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-8.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-9.png" alt="">
-          </div>
-          <div class="brand-item">
-            <img src="./assets/img/brand/logo-10.png" alt="">
-          </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-1.png" alt="">
         </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-2.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-3.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-4.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-5.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-6.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-7.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-8.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-9.png" alt="">
+        </div>
+        <div class="brand-item">
+          <img src="./assets/img/brand/logo-10.png" alt="">
+        </div>
+      </div>
       <p class="mt-5">
         <img src="./assets/img/logo-footer.svg" alt="">
       </p>
@@ -183,12 +183,263 @@
       </ul>
     </div>
   </footer>
+  <!-- Check order modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="checkOrderModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <span class="modal-title-icon">
+              <img src="./assets/img/search-order.png" alt="">
+            </span>
+            <h3 class="modal-title-text">ค้นหาเลขที่สั่งซื้อ</h3>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <img src="./assets/img/modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="ใส่เลขที่ใบสั่งซื้อ หรือ เบอร์โทรศัพท์์...">
+            <small class="text-muted font-italic pl-lg-4">ใส่เลขที่ใบสั่งซื้อหรือเบอร์โทรศัพทของคุณ (เช่น KD123,
+              0980009123)...</small>
+          </div>
+          <div class="order-result">
+            <div class="row align-items-center">
+              <div class="col-lg-auto">
+                <span>เลขที่ใบสั่งซื้อ</span>
+                <h3 class="font-weight-bold text-primary mb-0">KD123</h3>
+                <hr>
+              </div>
+              <div class="col-lg-auto">
+                <div>วันที่สั่งซื้อ 23/09/2019</div>
+                <div>ชื่อผู้สั่งซื้อ จรายุทธ พรมทา</div>
+                <hr>
+              </div>
+              <div class="col-lg">
+                <div class="row align-items-center">
+                  <div class="col-lg mb-3 mb-lg-0">
+                    <span>ยอดรวมที่ต้องชำระ</span>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <h3 class="font-weight-bold text-primary mb-0">฿900.00</h3>
+                      </div>
+                      <div class="col">
+                        <span class="payment-status">ยังไม่ได้ชำระ</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto">
+                    <div class="form-row">
+                      <div class="col-6 col-lg-12">
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                      </div>
+                      <div class="col-6 col-lg-12">
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal">เช็คสถานะ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Payment detail modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="paymentDetailModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <span class="modal-title-icon">
+              <img src="./assets/img/search-order.png" alt="">
+            </span>
+            <h3 class="modal-title-text">ค้นหาเลขที่สั่งซื้อ</h3>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <img src="./assets/img/modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="ใส่เลขที่ใบสั่งซื้อ หรือ เบอร์โทรศัพท์์...">
+            <small class="text-muted font-italic pl-lg-4">ใส่เลขที่ใบสั่งซื้อหรือเบอร์โทรศัพทของคุณ (เช่น KD123,
+              0980009123)...</small>
+          </div>
+          <div class="order-result">
+            <div class="row align-items-center">
+              <div class="col-lg-auto">
+                <span>เลขที่ใบสั่งซื้อ</span>
+                <h3 class="font-weight-bold text-primary mb-0">KD123</h3>
+                <hr>
+              </div>
+              <div class="col-lg-auto">
+                <div>วันที่สั่งซื้อ 23/09/2019</div>
+                <div>ชื่อผู้สั่งซื้อ จรายุทธ พรมทา</div>
+                <hr>
+              </div>
+              <div class="col-lg">
+                <div class="row align-items-center">
+                  <div class="col-lg mb-3 mb-lg-0">
+                    <span>ยอดรวมที่ต้องชำระ</span>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <h3 class="font-weight-bold text-primary mb-0">฿900.00</h3>
+                      </div>
+                      <div class="col">
+                        <span class="payment-status">ยังไม่ได้ชำระ</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto">
+                    <div class="form-row">
+                      <div class="col-6 col-lg-12">
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                      </div>
+                      <div class="col-6 col-lg-12">
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <form action="" class="form-payment-detail">
+            <h3>แบบฟอร์มแจ้งชำระเงิน</h3>
+            <div class="form-row">
+              <div class="form-group col-lg-6">
+                <input type="email" class="form-control" placeholder="อีเมลของคุณ">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="tel" class="form-control" placeholder="เบอร์ติดต่อกลับ">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="วันที่โอน">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="เวลาที่โอน">
+              </div>
+              <div class="form-group col-lg-6">
+                <input type="text" class="form-control" placeholder="ยอดที่โอน">
+              </div>
+              <div class="form-group col-lg-12">
+                <textarea rows="3" class="form-control" placeholder="ข้อความ"></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-6 col-lg-3">
+                <button type="submit"
+                  class="btn btn-default btn-primary btn-pill btn-block shadow">ยืนยันข้อมูล</button>
+              </div>
+              <div class="col-6 col-lg-3">
+                <button type="button" class="btn btn-default btn-dark btn-pill btn-block shadow" data-dismiss="modal"
+                  data-dismiss="modal">ยกเลิก</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Order status modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="orderStatusModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <span class="modal-title-icon">
+              <img src="./assets/img/search-order.png" alt="">
+            </span>
+            <h3 class="modal-title-text">ค้นหาเลขที่สั่งซื้อ</h3>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">
+            <img src="./assets/img/modal-close.png" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="ใส่เลขที่ใบสั่งซื้อ หรือ เบอร์โทรศัพท์์...">
+            <small class="text-muted font-italic pl-lg-4">ใส่เลขที่ใบสั่งซื้อหรือเบอร์โทรศัพทของคุณ (เช่น KD123,
+              0980009123)...</small>
+          </div>
+          <div class="order-result">
+            <div class="row align-items-center">
+              <div class="col-lg-auto">
+                <span>เลขที่ใบสั่งซื้อ</span>
+                <h3 class="font-weight-bold text-primary mb-0">KD123</h3>
+                <hr>
+              </div>
+              <div class="col-lg-auto">
+                <div>วันที่สั่งซื้อ 23/09/2019</div>
+                <div>ชื่อผู้สั่งซื้อ จรายุทธ พรมทา</div>
+                <hr>
+              </div>
+              <div class="col-lg">
+                <div class="row align-items-center">
+                  <div class="col-lg mb-3 mb-lg-0">
+                    <span>ยอดรวมที่ต้องชำระ</span>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <h3 class="font-weight-bold text-primary mb-0">฿900.00</h3>
+                      </div>
+                      <div class="col">
+                        <span class="payment-status">ยังไม่ได้ชำระ</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-auto">
+                    <div class="form-row">
+                      <div class="col-6 col-lg-12">
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                      </div>
+                      <div class="col-6 col-lg-12">
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
+                          data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div>
+            <h3>สถานะของสินค้า</h3>
+            <div class="card card-body">
+              <div class="row">
+                <div class="col-lg">
+                  <span>หมายเลขติดตามพัสดุ</span>
+                </div>
+                <div class="col-lg">
+
+                </div>
+                <div class="col-lg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- JS -->
   <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.js">
+  </script>
   <script src="./assets/js/main.js"></script>
 </body>
 

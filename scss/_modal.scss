@@ -1,11 +1,13 @@
-.modal{
-  &-dialog{
+.modal {
+  &-dialog {
     max-width: calc(100% - 1rem);
   }
-  &-header{
+
+  &-header {
     justify-content: center;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -17,7 +19,8 @@
       background-size: auto;
       z-index: -1;
     }
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -30,34 +33,86 @@
       border-top-left-radius: $modal-content-border-radius;
       border-top-right-radius: $modal-content-border-radius;
     }
-    .close{
+
+    .close {
       position: absolute;
       top: 0;
       right: 0;
       opacity: 1;
       margin: 0;
       padding: 0;
-      img{
+
+      img {
         width: 40px;
         height: 40px;
         object-fit: contain;
       }
     }
   }
-  &-title{
+
+  &-title {
     text-align: center;
-    &-icon{
+
+    &-icon {
       margin-bottom: 1rem;
       display: inline-block;
     }
   }
-  &-body{
+
+  &-body {
     background-color: $modal-body-bg;
     border-bottom-left-radius: $modal-content-border-radius;
     border-bottom-right-radius: $modal-content-border-radius;
+    padding-bottom: 2rem;
   }
-  @include media-breakpoint-up(xl){
-    &-dialog{
+
+  .order-result {
+    background-color: #FFEEE2;
+    position: relative;
+    padding: 1rem;
+    margin: 0 15px 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+      background: url('../img/bg-order-result-left.svg') repeat-y left top;
+      background-size: auto;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -15px;
+      width: 15px;
+      height: 100%;
+      background: url('../img/bg-order-result-right.svg') repeat-y right top;
+      background-size: auto;
+    }
+
+    hr {
+      border-top: 2px solid white;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
+
+    .payment-status {
+      border: 1px solid $primary;
+      border-radius: 10rem;
+      padding: .24rem .75rem;
+      color: $primary;
+      font-size: .8rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &-dialog {
       max-width: 1000px;
     }
   }
