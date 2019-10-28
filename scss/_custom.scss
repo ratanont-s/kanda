@@ -92,3 +92,11 @@
     }
   }
 }
+
+.alert{
+  background-color: $white;
+  display: flex;
+  &-icon{
+    margin-right: .5rem;
+  }
+}

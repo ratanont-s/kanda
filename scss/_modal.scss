@@ -110,6 +110,17 @@
       font-size: .8rem;
     }
   }
+  .product-status .card{
+    background-color: $gray-200;
+    border-width: 0;
+    border-radius: 10px;
+    hr{
+      border-top: 2px solid $white;
+      @include media-breakpoint-up(lg){
+        display: none;
+      }
+    }
+  }
 
   @include media-breakpoint-up(xl) {
     &-dialog {
