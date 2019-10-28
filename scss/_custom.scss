@@ -62,3 +62,33 @@
     margin: 0 0;
   }
 }
+
+.jFiler{
+  font-family: $font-family-base;
+  color: $text-muted;
+  &-theme-default{
+    .jFiler-input{
+      background-color: $gray-100;
+      border: 2px dashed $border-color;
+      margin-bottom: 1rem;
+      &-caption{
+        float: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .jFiler-item{
+      border-radius: 20px;
+      box-shadow: 0 4px 17px rgba(#120E0F, .10);
+      background-color: $white;
+    }
+    .jFiler-item-assets .icon-jfi-trash{
+      border-width: 0;
+      background-color: transparent;
+      color: $danger;
+    }
+  }
+}

@@ -232,12 +232,10 @@
                   <div class="col-lg-auto">
                     <div class="form-row">
                       <div class="col-6 col-lg-12">
-                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
                       </div>
                       <div class="col-6 col-lg-12">
-                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal">เช็คสถานะ</a>
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
                       </div>
                     </div>
                   </div>
@@ -251,7 +249,7 @@
   </div>
   <!-- Payment detail modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="paymentDetailModal">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal-title">
@@ -298,12 +296,10 @@
                   <div class="col-lg-auto">
                     <div class="form-row">
                       <div class="col-6 col-lg-12">
-                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
                       </div>
                       <div class="col-6 col-lg-12">
-                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
                       </div>
                     </div>
                   </div>
@@ -332,6 +328,9 @@
               </div>
               <div class="form-group col-lg-12">
                 <textarea rows="3" class="form-control" placeholder="ข้อความ"></textarea>
+              </div>
+              <div class="form-group col-lg-12">
+                <input type="file" name="files[]" id="filer_input" multiple="multiple">
               </div>
             </div>
             <div class="form-row">
@@ -398,12 +397,10 @@
                   <div class="col-lg-auto">
                     <div class="form-row">
                       <div class="col-6 col-lg-12">
-                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
+                        <a href='#paymentDetailModal' class="btn btn-default btn-primary btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">แจ้งชำระเงิน</a>
                       </div>
                       <div class="col-6 col-lg-12">
-                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow"
-                          data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
+                        <a href="#orderStatusModal" class="btn btn-default btn-dark btn-pill btn-block mb-2 shadow" data-toggle="modal" data-dismiss="modal">เช็คสถานะ</a>
                       </div>
                     </div>
                   </div>
@@ -440,6 +437,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.2.5/jquery.bootstrap-touchspin.min.js">
   </script>
+  <script src="./assets/js/jquery.filer.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

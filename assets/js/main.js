@@ -66,4 +66,13 @@ $(function () {
         buttondown_class: 'btn btn-white',
         buttonup_class: 'btn btn-white'
     });
+
+    $('#filer_input').filer({
+        showThumbs: true,
+        extensions: ["jpg", "png", "gif"],
+        addMore: true,
+        captions:{
+            feedback: "Select file to upload",
+        }
+    });
 });
