@@ -13,6 +13,8 @@ $(function () {
     $("#bestSeller .product").slick({
         arrows: false,
         slidesToShow: 4,
+        centerPadding: '70px',
+        autoplay: true,
         responsive: [{
                 breakpoint: 992,
                 settings: {
