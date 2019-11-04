@@ -5,12 +5,14 @@ header {
     position: relative;
     overflow-x: hidden;
     min-height: 138px;
-    .bg-character{
+
+    .bg-character {
         position: absolute;
         top: 0;
-        right: -2%;
+        right: -10%;
         display: none;
     }
+
     >.container {
         position: relative;
         z-index: 2;
@@ -30,12 +32,14 @@ header {
                 @include transition($transition-base);
             }
         }
-        &-toggler{
-            &-icon{
+
+        &-toggler {
+            &-icon {
                 background: url('../img/menu-bar.svg') no-repeat center center;
                 background-size: contain;
             }
-            &-close{
+
+            &-close {
                 background-color: transparent;
                 border-width: 0;
                 font-size: 1.5rem;
@@ -82,11 +86,14 @@ header {
         min-height: 240px;
         background-position: center center;
         background-size: cover;
-        .bg-character{
+
+        .bg-character {
             display: block;
         }
+
         .navbar {
             padding-bottom: 5rem;
+
             >.container {
                 flex-direction: column;
             }
@@ -95,7 +102,8 @@ header {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
-            &-toggler-close{
+
+            &-toggler-close {
                 display: none;
             }
         }
@@ -121,10 +129,11 @@ header {
         }
     }
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
         .offcanvas-collapse {
             position: fixed;
-            top: 0; /* Height of navbar */
+            top: 0;
+            /* Height of navbar */
             bottom: 0;
             left: 100%;
             width: 100%;
@@ -137,20 +146,22 @@ header {
             transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
             transition: transform .3s ease-in-out, visibility .3s ease-in-out;
             transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+
             &.open {
                 visibility: visible;
                 -webkit-transform: translateX(-100%);
                 transform: translateX(-100%);
                 z-index: $zindex-fixed;
-              }
-          }
-          .product{
-              &-img{
+            }
+        }
+
+        .product {
+            &-img {
                 max-width: 135%;
                 margin-left: 50%;
-      transform: translateX(-50%);
+                transform: translateX(-50%);
             }
-          }
+        }
     }
 }
 
@@ -159,6 +170,7 @@ header {
         background: url('../img/bg-navbar-bottom.png') repeat-x center bottom;
         background-size: auto 100%;
         @include transition($transition-base);
+
         &-brand {
             margin-bottom: 0;
             @include transition($transition-base);
